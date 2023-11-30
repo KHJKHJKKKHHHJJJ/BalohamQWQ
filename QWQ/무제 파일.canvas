@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"2d5c8c1192e20f37","type":"text","text":"학습시작 버튼","x":-282,"y":-240,"width":182,"height":60,"color":"5"},
+		{"id":"4f07600ee745e6ae","type":"text","text":"퀴즈 버튼","x":-279,"y":-120,"width":147,"height":60,"color":"4"},
+		{"id":"d02b67ba47023347","type":"text","text":"Login","x":-770,"y":-240,"width":140,"height":60,"color":"1"},
+		{"id":"97a3cf64618b46e8","type":"text","text":"Main","x":-540,"y":-180,"width":114,"height":60,"color":"1"},
+		{"id":"92346dfe9161ac50","type":"text","text":"Select Day","x":-5,"y":-180,"width":145,"height":60,"color":"1"},
+		{"id":"692012e223856419","type":"text","text":"단어 리스트 보기","x":340,"y":-380,"width":200,"height":60,"color":"5"},
+		{"id":"8a79223adfd82264","type":"text","text":"FlashCard","x":315,"y":-20,"width":250,"height":60,"color":"5"},
+		{"id":"a6ed6864267d73cd","type":"text","text":"Sign-Up","x":-755,"y":-20,"width":125,"height":60,"color":"1"},
+		{"id":"b723a5d8843b2028","type":"text","text":"Quiz","x":-256,"y":10,"width":101,"height":60,"color":"4"},
+		{"id":"08b3ab6356d05f37","x":-282,"y":160,"width":149,"height":60,"color":"4","type":"text","text":"Result Page"}
+	],
+	"edges":[
+		{"id":"74436e85b3159433","fromNode":"d02b67ba47023347","fromSide":"bottom","toNode":"a6ed6864267d73cd","toSide":"left"},
+		{"id":"df9a6f7ca87850b6","fromNode":"a6ed6864267d73cd","fromSide":"right","toNode":"d02b67ba47023347","toSide":"bottom"},
+		{"id":"9c404d70a06fbaab","fromNode":"d02b67ba47023347","fromSide":"right","toNode":"97a3cf64618b46e8","toSide":"left"},
+		{"id":"6d8b9d8fb8527ad7","fromNode":"92346dfe9161ac50","fromSide":"right","toNode":"692012e223856419","toSide":"left"},
+		{"id":"34e079a2c59759ed","fromNode":"97a3cf64618b46e8","fromSide":"right","toNode":"2d5c8c1192e20f37","toSide":"left"},
+		{"id":"7f64f8ad69c84a6c","fromNode":"2d5c8c1192e20f37","fromSide":"right","toNode":"92346dfe9161ac50","toSide":"left"},
+		{"id":"884f1333292e79d3","fromNode":"97a3cf64618b46e8","fromSide":"right","toNode":"4f07600ee745e6ae","toSide":"left"},
+		{"id":"6996d70d9a9ef14b","fromNode":"4f07600ee745e6ae","fromSide":"right","toNode":"92346dfe9161ac50","toSide":"left"},
+		{"id":"d75042d0bbd0faef","fromNode":"92346dfe9161ac50","fromSide":"bottom","toNode":"b723a5d8843b2028","toSide":"right"},
+		{"id":"d3cbe63d1bd2340a","fromNode":"92346dfe9161ac50","fromSide":"right","toNode":"8a79223adfd82264","toSide":"left"},
+		{"id":"dc344e80754dd31c","fromNode":"92346dfe9161ac50","fromSide":"top","toNode":"97a3cf64618b46e8","toSide":"top","color":"3","label":"이전"},
+		{"id":"ce62643d33dacd9d","fromNode":"b723a5d8843b2028","fromSide":"bottom","toNode":"08b3ab6356d05f37","toSide":"top"},
+		{"id":"9d84bc1ed2f8af23","fromNode":"08b3ab6356d05f37","fromSide":"left","toNode":"97a3cf64618b46e8","toSide":"bottom","color":"3","label":"메뉴로 돌아가기"}
+	]
+}
