@@ -35,7 +35,7 @@ def go_main():
 # 회원 가입으로 이동하는 함수
 def go_signUp():
     win = Toplevel()
-    su.SignPage(win, Id.get())
+    su.SignPage(win)
 
 # loginPage 로 Tk() 불러옴
 lP = Tk()
