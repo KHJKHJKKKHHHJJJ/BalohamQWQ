@@ -4,6 +4,12 @@ from tkinter import *
 from main import Main
 import SignUp as su
 
+''' * 중요 *
+테스트 할 때 아이디 하나 만들고 해야함
+회원가입으로 하나 만들고 할 것.
+'''
+
+
 # DB 불러옴 (DB파일 안에 있음)
 dbgen = sql.connect("DB/user.db")
 dbcs = dbgen.cursor()
