@@ -41,6 +41,9 @@ class LoginPage:
         SignUpBtn.place(y=145, x=480)
         dbgen.commit()
 
+
+        self.lP.bind("<Return>", self.enter)
+
     def logIn(self):
         userId = self.Id.get()
         userPW = self.pw.get()
@@ -61,6 +64,10 @@ class LoginPage:
         win = Toplevel()
         su.SignPage(win)
         self.lP.withdraw()
+
+    def enter(self, event):
+        self.logIn()
+
 
 if __name__ == "__main__":
     win = Tk()
