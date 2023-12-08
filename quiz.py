@@ -56,6 +56,8 @@ class Quiz:
         self.nextbtn = Button(quiz_window, text="건너뛰기", width= 38, height=3, font=("SUITE Variable",15,'bold'), bg="light yellow", command=self.next_word)
         self.nextbtn.pack(pady= 10, side=BOTTOM)
 
+        self.quiz_window.bind("<space>", self.skip)
+
 
     # next_self.word 함수
     def next_word(self):
@@ -71,6 +73,7 @@ class Quiz:
             self.quiz_window.withdraw()
         else:
             # 다음 정답 결정
+            self.nextbtn['text'] = "건너뛰기"
             if self.index != len(self.english)- 1:
                 self.word.config(text=self.english[self.index])
                 self.answer.config(text=self.date_vocab[self.word["text"]])
@@ -115,3 +118,6 @@ class Quiz:
         userId = self.id
         date = self.date
         rs.ResultPage(win, userId, date, corr)
+
+    def skip(self, event):
+        self.next_word()
